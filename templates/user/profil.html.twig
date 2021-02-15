@@ -1,0 +1,20 @@
+{% extends 'layout.html.twig' %}
+
+{% block main %}
+
+    <br>
+    <div class="card border-primary mb-3 align-item-md-center" style="max-width: 20rem;">
+        <div class="card-header">Mon Profil</div>
+        <div class="card-body">
+            <h4 class="card-title"></h4>
+            <p class="card-text">
+                Prénom : {{ app.user.prenom}}
+                <br>
+                Nom : {{ app.user.nom }}
+                <br>
+                Email : {{ app.user.email }}
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
